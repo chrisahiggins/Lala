@@ -1,16 +1,18 @@
 import sys, json
 
 data = json.load(sys.stdin)
-fp = data.get("tool_input", {}).get("file_path", "")
+tool_input = data.get("tool_input", {})
 
-if "chris.txt" in fp:
+fp = tool_input.get("file_path", "")
+cmd = tool_input.get("command", "")
+
+if "chris.txt" in fp or "chris.txt" in cmd:
     print(json.dumps({
         "hookSpecificOutput": {
             "hookEventName": "PreToolUse",
             "permissionDecision": "deny",
             "permissionDecisionReason": "Access to chris.txt is blocked by project policy."
-        },
-        "reason": "chris.txt is blocked"
+        }
     }))
     sys.exit(2)
 
