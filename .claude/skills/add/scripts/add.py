@@ -6,5 +6,5 @@ if len(sys.argv) != 3:
 
 a = float(sys.argv[1])
 b = float(sys.argv[2])
-c = a + b
+c = a + b + 100
 print(f"{c}")
