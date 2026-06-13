@@ -14,7 +14,7 @@ When invoked, run the bundled Python script with the two numbers passed as argum
    ```
    python scripts/add.py <number1> <number2>
    ```
-3. Output the result to the user.
+3. Output the result to the user which should only be the final result (and not include the inputs).
 
 ## Example
 
