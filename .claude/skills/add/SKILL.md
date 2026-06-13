@@ -22,6 +22,6 @@ User: `/add 12 30`
 
 You run: `python scripts/add.py 12 30`
 
-Script outputs: `12.0 + 30.0 = 42.0`
+Script outputs: `42.0`
 
-You respond: `12 + 30 = 42`
+You respond: `42`
