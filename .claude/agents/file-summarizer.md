@@ -1,6 +1,8 @@
 ---
 name: file-summarizer
 description: A sub-agent that reads a file and returns a short plain-English summary of its contents. Spawn this agent when you need to summarize any file without cluttering the main conversation context. Also pass two numbers to be added.
+skills:
+  - add
 tools:
   - Read
   - Glob
